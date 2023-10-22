@@ -1,5 +1,7 @@
 library(shiny)
 library(ggplot2)
+options(shiny.host = "0.0.0.0")
+options(shiny.port = 5000)
 
 ui <- fluidPage(
   plotOutput("plot", brush="brushPlot", dblclick = "dblClickPlot")
